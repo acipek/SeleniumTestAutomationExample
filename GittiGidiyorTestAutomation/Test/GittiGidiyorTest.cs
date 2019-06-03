@@ -168,6 +168,12 @@ namespace GittiGidiyorTestAutomation.Test
             gittiGidiyorPage.ClickSaveAndContinue();
         }
 
+        [StepDefinition(@"Devam Et butonuna tıklanır")]
+        public void ClickContinue()
+        {
+            gittiGidiyorPage.ClickContinue();
+        }
+
         [StepDefinition(@"Ödeme yöntemi olarak BKM express seçilir")]
         public void ClickPayMethod()
         {

@@ -27,3 +27,22 @@ Scenario: GittiGidiyorTestForAccountsWithoutAddress
 	* Kaydet ve Devam Et butonuna tıklanır
 	* Ödeme yöntemi olarak BKM express seçilir
 
+@GittiGidiyorTestForAccountsWithAddress
+Scenario: GittiGidiyorTestForAccountsWithAddress
+	* GittiGidiyor anasayfası açılır
+	* Güncel fırsatlar pop-up'ında daha sonra butonu tıklanır
+	* Giriş yap butonu üzerine gelinir
+	* Giriş yap butonuna tıklanır
+	* Email alanına 'email' şifre alanına 'şifre' yazılır
+	* Üye girişi ekranında giriş yap butonuna tıklanır
+	* Menüden Otomobil, Motosiklet üzerine gelinir
+	* Menüden eldiven seçilir
+	* Yan filtreden kırmızı-siyah seçilir
+	* Üst filtreden ücretsiz kargo seçilir
+	* İlk ürün seçilir
+	* Beden olarak 'Beden' seçilir
+	* Renk olarak 'Renk' seçilir
+	* Sepete Ekle butonuna tıklanır
+	* Alışverişi tamamla butonuna tıklanır
+	* Devam Et butonuna tıklanır
+	* Ödeme yöntemi olarak BKM express seçilir

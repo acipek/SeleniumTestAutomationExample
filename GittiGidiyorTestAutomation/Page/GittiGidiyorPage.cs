@@ -79,6 +79,9 @@ namespace GittiGidiyorTestAutomation.Page
         [FindsBy(How = How.ClassName, Using = "post-address")]
         public IWebElement BtnSaveAndContinue { get; set; }
 
+        [FindsBy(How = How.Id, Using = "post-address-form")]
+        public IWebElement BtnContinue { get; set; }
+
         [FindsBy(How = How.Id, Using = "P-PayViaBKM")]
         public IWebElement BtnPayMethod { get; set; }
 
@@ -193,6 +196,10 @@ namespace GittiGidiyorTestAutomation.Page
         public void ClickSaveAndContinue()
         {
             Click(BtnSaveAndContinue);
+        }
+        public void ClickContinue()
+        {
+            Click(BtnContinue);
         }
 
         public void ClickPayMethod()
