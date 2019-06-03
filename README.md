@@ -1,4 +1,4 @@
 # SeleniumTestAutomationExample
-Automation of GittiGidiyor purchase process with Selenium and SpecFlow
+GittiGidiyor sitesinin alışveriş sürecinin Selenium ve SpecFlow ile otomasyonu
 
-In order to run tests, fill the email and password in the "GittiGidiyorTest.feature" file with your credentials.
+Testlerin çalışabilmesi için SpecFlow feature dosyasındaki parametrelerin düzeltilmesi gerekmektedir.
