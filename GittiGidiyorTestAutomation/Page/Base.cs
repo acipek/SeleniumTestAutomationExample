@@ -43,5 +43,23 @@ namespace GittiGidiyorTestAutomation.Page
         {
             txt.SendKeys(text);
         }
+        public void SelectOptionByText(IWebElement slct, string text)
+        {
+            SelectElement selectElement = new SelectElement(slct);
+            selectElement.SelectByText(text);
+            WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(20));
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.TextToBePresentInElement(slct, text));
+        }
+
+        public void ScrollTo(IWebElement el)
+        {
+            string jsStmt = String.Format("window.scrollTo({0},{1})", el.Location.X, el.Location.Y);
+            GetScriptExecutor().ExecuteScript(jsStmt, true);
+        }
+
+        public IJavaScriptExecutor GetScriptExecutor()
+        {
+            return (IJavaScriptExecutor)_driver;
+        }
     }
 }

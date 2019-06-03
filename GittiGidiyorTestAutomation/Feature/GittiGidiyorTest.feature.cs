@@ -64,12 +64,12 @@ namespace GittiGidiyorTestAutomation.Feature
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("GittiGidiyorTest")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void GittiGidiyorTest()
+        [NUnit.Framework.DescriptionAttribute("GittiGidiyorTestForAccountsWithoutAddress")]
+        [NUnit.Framework.CategoryAttribute("GittiGidiyorTestForAccountsWithoutAddress")]
+        public virtual void GittiGidiyorTestForAccountsWithoutAddress()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("GittiGidiyorTest", new string[] {
-                        "mytag"});
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("GittiGidiyorTestForAccountsWithoutAddress", new string[] {
+                        "GittiGidiyorTestForAccountsWithoutAddress"});
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line 6
@@ -81,9 +81,43 @@ this.ScenarioSetup(scenarioInfo);
 #line 9
  testRunner.And("Giriş yap butonuna tıklanır", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line 10
- testRunner.And("Email alanına \'email\' şifre alanına \'password\' yazılır", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+ testRunner.And("Email alanına \'email\' şifre alanına \'şifre\' yazılır", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line 11
  testRunner.And("Üye girişi ekranında giriş yap butonuna tıklanır", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+#line 12
+ testRunner.And("Menüden Otomobil, Motosiklet üzerine gelinir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+#line 13
+ testRunner.And("Menüden eldiven seçilir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+#line 14
+ testRunner.And("Yan filtreden kırmızı-siyah seçilir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+#line 15
+ testRunner.And("Üst filtreden ücretsiz kargo seçilir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+#line 16
+ testRunner.And("İlk ürün seçilir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+#line 17
+ testRunner.And("Beden olarak \'Beden\' seçilir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+#line 18
+ testRunner.And("Renk olarak \'Renk\' seçilir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+#line 19
+ testRunner.And("Sepete Ekle butonuna tıklanır", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+#line 20
+ testRunner.And("Alışverişi tamamla butonuna tıklanır", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+#line 21
+ testRunner.And("Ad alanına \'İsim\' yazılır", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+#line 22
+ testRunner.And("Soyad alanına \'Soyisim\' yazılır", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+#line 23
+ testRunner.And("Şehir olarak \'Şehir\' seçilir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+#line 24
+ testRunner.And("İlçe olarak \'İlçe\' seçilir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+#line 25
+ testRunner.And("Adres alanına \'Adres\' yazılır", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+#line 26
+ testRunner.And("Telefon-1 alanına \'5123456789\' yazılır", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+#line 27
+ testRunner.And("Kaydet ve Devam Et butonuna tıklanır", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+#line 28
+ testRunner.And("Ödeme yöntemi olarak BKM express seçilir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line hidden
             this.ScenarioCleanup();
         }
