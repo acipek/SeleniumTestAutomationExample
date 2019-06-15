@@ -94,7 +94,10 @@
       <DependentUpon>GittiGidiyorTest.feature</DependentUpon>
     </Compile>
     <Compile Include="Page\Base.cs" />
+    <Compile Include="Page\GittiGidiyorAddressPage.cs" />
+    <Compile Include="Page\GittiGidiyorLoginPage.cs" />
     <Compile Include="Page\GittiGidiyorPage.cs" />
+    <Compile Include="Page\GittiGidiyorShoppingPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Test\GittiGidiyorTest.cs" />
   </ItemGroup>

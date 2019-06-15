@@ -33,15 +33,15 @@ Scenario: GittiGidiyorTestForAccountsWithAddress
 	* Güncel fırsatlar pop-up'ında daha sonra butonu tıklanır
 	* Giriş yap butonu üzerine gelinir
 	* Giriş yap butonuna tıklanır
-	* Email alanına 'email' şifre alanına 'şifre' yazılır
+	* Email alanına 'email' şifre alanına 'password' yazılır
 	* Üye girişi ekranında giriş yap butonuna tıklanır
 	* Menüden Otomobil, Motosiklet üzerine gelinir
 	* Menüden eldiven seçilir
 	* Yan filtreden kırmızı-siyah seçilir
 	* Üst filtreden ücretsiz kargo seçilir
 	* İlk ürün seçilir
-	* Beden olarak 'Beden' seçilir
-	* Renk olarak 'Renk' seçilir
+	* Beden olarak 'L' seçilir
+	* Renk olarak 'Kırmızı-Siyah' seçilir
 	* Sepete Ekle butonuna tıklanır
 	* Alışverişi tamamla butonuna tıklanır
 	* Devam Et butonuna tıklanır

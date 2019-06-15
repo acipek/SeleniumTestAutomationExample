@@ -140,7 +140,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 35
  testRunner.And("Giriş yap butonuna tıklanır", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line 36
- testRunner.And("Email alanına \'email\' şifre alanına \'şifre\' yazılır", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+ testRunner.And("Email alanına \'email\' şifre alanına \'password\' yazılır", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line 37
  testRunner.And("Üye girişi ekranında giriş yap butonuna tıklanır", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line 38
@@ -154,9 +154,9 @@ this.ScenarioSetup(scenarioInfo);
 #line 42
  testRunner.And("İlk ürün seçilir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line 43
- testRunner.And("Beden olarak \'Beden\' seçilir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+ testRunner.And("Beden olarak \'L\' seçilir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line 44
- testRunner.And("Renk olarak \'Renk\' seçilir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
+ testRunner.And("Renk olarak \'Kırmızı-Siyah\' seçilir", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line 45
  testRunner.And("Sepete Ekle butonuna tıklanır", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "* ");
 #line 46

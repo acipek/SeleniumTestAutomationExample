@@ -17,6 +17,9 @@ namespace GittiGidiyorTestAutomation.Test
     {
         public IWebDriver webDriver;
         public GittiGidiyorPage gittiGidiyorPage;
+        public GittiGidiyorLoginPage gittiGidiyorLoginPage;
+        public GittiGidiyorShoppingPage gittiGidiyorShoppingPage;
+        public GittiGidiyorAddressPage gittiGidiyorAddressPage;
         [BeforeScenario]
         public void Before()
         {
@@ -34,6 +37,9 @@ namespace GittiGidiyorTestAutomation.Test
             webDriver = new ChromeDriver(driverPath, chromeOptions);
 
             gittiGidiyorPage = new GittiGidiyorPage(webDriver);
+            gittiGidiyorLoginPage = new GittiGidiyorLoginPage(webDriver);
+            gittiGidiyorShoppingPage = new GittiGidiyorShoppingPage(webDriver);
+            gittiGidiyorAddressPage = new GittiGidiyorAddressPage(webDriver);
         }
 
 
@@ -64,120 +70,120 @@ namespace GittiGidiyorTestAutomation.Test
         [StepDefinition(@"Email alanına '(.*)' şifre alanına '(.*)' yazılır")]
         public void FillLogin(string email, string password)
         {
-            gittiGidiyorPage.FillLoginInfo(email, password);
+            gittiGidiyorLoginPage.FillLoginInfo(email, password);
         }
 
         [StepDefinition(@"Üye girişi ekranında giriş yap butonuna tıklanır")]
         public void Login()
         {
-            gittiGidiyorPage.ClickLoginButton();
+            gittiGidiyorLoginPage.ClickLoginButton();
         }
 
         [StepDefinition(@"Menüden Otomobil, Motosiklet üzerine gelinir")]
         public void HoverMenu()
         {
-            gittiGidiyorPage.HoverMenuItem();
+            gittiGidiyorShoppingPage.HoverMenuItem();
         }
         [StepDefinition(@"Menüden eldiven seçilir")]
         public void ClickMenu()
         {
-            gittiGidiyorPage.ClickMenuItem();
+            gittiGidiyorShoppingPage.ClickMenuItem();
         }
 
         [StepDefinition(@"Yan filtreden kırmızı-siyah seçilir")]
         public void ClickLeftFilter()
         {
-            gittiGidiyorPage.ClickFilterLeft();
+            gittiGidiyorShoppingPage.ClickFilterLeft();
         }
 
         [StepDefinition(@"Üst filtreden ücretsiz kargo seçilir")]
         public void ClickTopFilter()
         {
-            gittiGidiyorPage.ClickFilterTop();
+            gittiGidiyorShoppingPage.ClickFilterTop();
         }
 
         [StepDefinition(@"İlk ürün seçilir")]
         public void ChooseFirstItem()
         {
-            gittiGidiyorPage.ClickFirstItem();
+            gittiGidiyorShoppingPage.ClickFirstItem();
         }
 
         [StepDefinition(@"Beden olarak '(.*)' seçilir")]
         public void ChooseSize(string s)
         {
-            gittiGidiyorPage.ChooseSize(s);
+            gittiGidiyorShoppingPage.ChooseSize(s);
         }
 
         [StepDefinition(@"Renk olarak '(.*)' seçilir")]
         public void ChooseFirstItem(string c)
         {
-            gittiGidiyorPage.ChooseColor(c);
+            gittiGidiyorShoppingPage.ChooseColor(c);
         }
 
         [StepDefinition(@"Sepete Ekle butonuna tıklanır")]
         public void ClickBasket()
         {
-            gittiGidiyorPage.ClickAddToBasket();
+            gittiGidiyorShoppingPage.ClickAddToBasket();
         }
 
         [StepDefinition(@"Alışverişi tamamla butonuna tıklanır")]
         public void ClickPay()
         {
-            gittiGidiyorPage.ClickPay();
+            gittiGidiyorShoppingPage.ClickPay();
         }
 
         [StepDefinition(@"Ad alanına '(.*)' yazılır")]
         public void SetName(string name)
         {
-            gittiGidiyorPage.SetName(name);
+            gittiGidiyorAddressPage.SetName(name);
         }
 
         [StepDefinition(@"Soyad alanına '(.*)' yazılır")]
         public void SetSurname(string surname)
         {
-            gittiGidiyorPage.SetSurname(surname);
+            gittiGidiyorAddressPage.SetSurname(surname);
         }
 
         [StepDefinition(@"Şehir olarak '(.*)' seçilir")]
         public void ChooseCity(string s)
         {
-            gittiGidiyorPage.ChooseCity(s);
+            gittiGidiyorAddressPage.ChooseCity(s);
         }
 
         [StepDefinition(@"İlçe olarak '(.*)' seçilir")]
         public void ChooseDistrict(string s)
         {
-            gittiGidiyorPage.ChooseDistrict(s);
+            gittiGidiyorAddressPage.ChooseDistrict(s);
         }
 
         [StepDefinition(@"Adres alanına '(.*)' yazılır")]
         public void SetAddress(string address)
         {
-            gittiGidiyorPage.SetAddress(address);
+            gittiGidiyorAddressPage.SetAddress(address);
         }
 
         [StepDefinition(@"Telefon-1 alanına '(.*)' yazılır")]
         public void SetPhone(string phone)
         {
-            gittiGidiyorPage.SetPhone(phone);
+            gittiGidiyorAddressPage.SetPhone(phone);
         }
 
         [StepDefinition(@"Kaydet ve Devam Et butonuna tıklanır")]
         public void ClickSaveAndContinue()
         {
-            gittiGidiyorPage.ClickSaveAndContinue();
+            gittiGidiyorAddressPage.ClickSaveAndContinue();
         }
 
         [StepDefinition(@"Devam Et butonuna tıklanır")]
         public void ClickContinue()
         {
-            gittiGidiyorPage.ClickContinue();
+            gittiGidiyorAddressPage.ClickContinue();
         }
 
         [StepDefinition(@"Ödeme yöntemi olarak BKM express seçilir")]
         public void ClickPayMethod()
         {
-            gittiGidiyorPage.ClickPayMethod();
+            gittiGidiyorShoppingPage.ClickPayMethod();
         }
 
         [AfterScenario]
